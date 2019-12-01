@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listItemHeight">88dp</dimen>
+    <dimen name="activityHorizontalMargin">16dp</dimen>
+    <dimen name="activityVerticalMargin">16dp</dimen>
+</resources>
