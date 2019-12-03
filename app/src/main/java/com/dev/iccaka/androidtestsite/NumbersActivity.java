@@ -30,10 +30,10 @@ public class NumbersActivity extends AppCompatActivity implements SetViews {
         this.dictionaryList.add(second);
         this.dictionaryList.add(third);
 
-        CustomAdapter customAdapter = new CustomAdapter(this, this.dictionaryList);
+        WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
 
         GridView gridView = findViewById(R.id.mainGridView);
-        gridView.setAdapter(customAdapter);
+        gridView.setAdapter(wordAdapter);
     }
 
     @Override

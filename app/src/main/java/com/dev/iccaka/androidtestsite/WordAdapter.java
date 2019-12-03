@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CustomAdapter extends BaseAdapter {
+public class WordAdapter extends BaseAdapter {
 
     private Context context;
     private List<Dictionary> dictionaryList;
 
-    public CustomAdapter(Context context, List<Dictionary> dictionaryList) {
+    public WordAdapter(Context context, List<Dictionary> dictionaryList) {
         this.context = context;
         this.dictionaryList = dictionaryList;
     }
