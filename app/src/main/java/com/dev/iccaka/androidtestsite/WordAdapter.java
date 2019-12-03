@@ -39,16 +39,37 @@ public class WordAdapter extends BaseAdapter {
         final Dictionary dictionary = this.dictionaryList.get(position);
 
         if (convertView == null) {
-            final LayoutInflater layoutInflater = LayoutInflater.from(this.context);
-            convertView = layoutInflater.inflate(R.layout.linear_layout_numbers, null);
+            convertView = LayoutInflater.from(this.context).inflate(R.layout.linear_layout_numbers, null);
+
+            final TextView defaultWord = convertView.findViewById(R.id.defaultWord);
+            final TextView translatedWord = convertView.findViewById(R.id.translatedWord);
+            final ViewHolder viewHolder = new ViewHolder(defaultWord, translatedWord);
+
+            convertView.setTag(viewHolder);
         }
 
-        final TextView defaultWord = convertView.findViewById(R.id.defaultWord);
-        final TextView translatedWord = convertView.findViewById(R.id.translatedWord);
-
-        defaultWord.setText(dictionary.getDefaultWord());
-        translatedWord.setText(dictionary.getTranslatedWord());
+        final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
+        viewHolder.getDefaultWord().setText(dictionary.getDefaultWord());
+        viewHolder.getTranslatedWord().setText(dictionary.getTranslatedWord());
 
         return convertView;
+    }
+
+    private class ViewHolder{
+        private final TextView defaultWord;
+        private final TextView translatedWord;
+
+        public ViewHolder(TextView defaultWord, TextView translatedWord) {
+            this.defaultWord = defaultWord;
+            this.translatedWord = translatedWord;
+        }
+
+        public TextView getDefaultWord() {
+            return this.defaultWord;
+        }
+
+        public TextView getTranslatedWord() {
+            return this.translatedWord;
+        }
     }
 }
