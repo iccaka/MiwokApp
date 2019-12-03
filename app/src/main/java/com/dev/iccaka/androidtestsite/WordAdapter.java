@@ -39,7 +39,7 @@ public class WordAdapter extends BaseAdapter {
         final Dictionary dictionary = this.dictionaryList.get(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(this.context).inflate(R.layout.linear_layout_numbers, null);
+            convertView = LayoutInflater.from(this.context).inflate(R.layout.words_grid_view, null);
 
             final TextView defaultWord = convertView.findViewById(R.id.defaultWord);
             final TextView translatedWord = convertView.findViewById(R.id.translatedWord);
@@ -55,7 +55,7 @@ public class WordAdapter extends BaseAdapter {
         return convertView;
     }
 
-    private class ViewHolder{
+    private class ViewHolder {
         private final TextView defaultWord;
         private final TextView translatedWord;
 

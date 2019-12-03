@@ -10,21 +10,21 @@ public abstract class BaseDictionary implements Dictionary {
         this.setTranslatedWord(translatedWord);
     }
 
-    private void setDefaultWord(String defaultWord) {
-        this.defaultWord = defaultWord;
-    }
-
-    private void setTranslatedWord(String translatedWord) {
-        this.translatedWord = translatedWord;
-    }
-
     @Override
     public String getDefaultWord() {
         return this.defaultWord;
     }
 
+    private void setDefaultWord(String defaultWord) {
+        this.defaultWord = defaultWord;
+    }
+
     @Override
     public String getTranslatedWord() {
         return this.translatedWord;
+    }
+
+    private void setTranslatedWord(String translatedWord) {
+        this.translatedWord = translatedWord;
     }
 }

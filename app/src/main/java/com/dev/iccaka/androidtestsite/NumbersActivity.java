@@ -1,18 +1,10 @@
 package com.dev.iccaka.androidtestsite;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.GridView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class NumbersActivity extends AppCompatActivity implements SetViews {
-
-    private View mainGridView;
-    private List<Dictionary> dictionaryList;
+public class NumbersActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,17 +14,24 @@ public class NumbersActivity extends AppCompatActivity implements SetViews {
         this.setViews();
 
         this.dictionaryList = new ArrayList<>();
-        this.dictionaryList.add(new CustomDictionary("one", "edno"));
-        this.dictionaryList.add(new CustomDictionary("two", "dve"));
-        this.dictionaryList.add(new CustomDictionary("three", "tri"));
+        this.dictionaryList.add(new CustomDictionary("one", "lutti"));
+        this.dictionaryList.add(new CustomDictionary("two", "otiiko"));
+        this.dictionaryList.add(new CustomDictionary("three", "tolookosu"));
+        this.dictionaryList.add(new CustomDictionary("four", "oyyisa"));
+        this.dictionaryList.add(new CustomDictionary("five", "massokka"));
+        this.dictionaryList.add(new CustomDictionary("six", "temmokka"));
+        this.dictionaryList.add(new CustomDictionary("seven", "kenekaku"));
+        this.dictionaryList.add(new CustomDictionary("eight", "kawinta"));
+        this.dictionaryList.add(new CustomDictionary("nine", "wo'e"));
+        this.dictionaryList.add(new CustomDictionary("ten", "na'aacha"));
+
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
-        GridView gridView = findViewById(R.id.mainGridView);
-        gridView.setAdapter(wordAdapter);
+        this.mainGridView.setAdapter(wordAdapter);
     }
 
     @Override
     public void setViews() {
-        this.mainGridView = findViewById(R.id.mainGridView);
+        this.mainGridView = findViewById(R.id.numbersActivityMainGridView);
     }
 }

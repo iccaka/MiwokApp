@@ -7,13 +7,12 @@
     tools:context=".NumbersActivity">
 
     <GridView
-        android:id="@+id/mainGridView"
-        android:numColumns="3"
+        android:id="@+id/numbersActivityMainGridView"
+        android:numColumns="2"
         android:gravity="center"
         android:stretchMode="columnWidth"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </GridView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
