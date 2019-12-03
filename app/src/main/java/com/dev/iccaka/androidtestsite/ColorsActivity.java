@@ -1,10 +1,10 @@
 package com.dev.iccaka.androidtestsite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class ColorsActivity extends AppCompatActivity implements SetViews{
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ColorsActivity extends AppCompatActivity implements SetViews {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

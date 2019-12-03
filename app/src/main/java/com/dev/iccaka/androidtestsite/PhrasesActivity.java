@@ -1,7 +1,8 @@
 package com.dev.iccaka.androidtestsite;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class PhrasesActivity extends AppCompatActivity implements SetViews {

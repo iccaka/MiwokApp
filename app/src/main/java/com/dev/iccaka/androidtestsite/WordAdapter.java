@@ -43,11 +43,11 @@ public class WordAdapter extends BaseAdapter {
             convertView = layoutInflater.inflate(R.layout.linear_layout_numbers, null);
         }
 
-        final TextView defaultWordTextView = convertView.findViewById(R.id.defaultWord);
-        final TextView translatedWordTextView = convertView.findViewById(R.id.translatedWord);
+        final TextView defaultWord = convertView.findViewById(R.id.defaultWord);
+        final TextView translatedWord = convertView.findViewById(R.id.translatedWord);
 
-        defaultWordTextView.setText(dictionary.getDefaultWord());
-        translatedWordTextView.setText(dictionary.getTranslatedWord());
+        defaultWord.setText(dictionary.getDefaultWord());
+        translatedWord.setText(dictionary.getTranslatedWord());
 
         return convertView;
     }
