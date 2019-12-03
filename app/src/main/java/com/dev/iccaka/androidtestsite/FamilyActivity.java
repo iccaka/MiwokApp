@@ -2,7 +2,6 @@ package com.dev.iccaka.androidtestsite;
 
 import android.os.Bundle;
 
-
 import java.util.ArrayList;
 
 public class FamilyActivity extends BaseActivity {
@@ -32,6 +31,6 @@ public class FamilyActivity extends BaseActivity {
 
     @Override
     public void setViews() {
-        this.mainGridView = findViewById(R.id.colorActivityMainGridView);
+        this.mainGridView = findViewById(R.id.familyActivityMainGridView);
     }
 }

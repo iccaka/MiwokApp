@@ -7,7 +7,7 @@
     tools:context=".ColorsActivity">
 
     <GridView
-        android:id="@+id/colorActivityMainGridView"
+        android:id="@+id/colorsActivityMainGridView"
         android:numColumns="2"
         android:gravity="center"
         android:stretchMode="columnWidth"

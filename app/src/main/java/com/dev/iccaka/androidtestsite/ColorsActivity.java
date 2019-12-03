@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-
 public class ColorsActivity extends BaseActivity {
 
     @Override
@@ -30,6 +29,6 @@ public class ColorsActivity extends BaseActivity {
 
     @Override
     public void setViews() {
-        this.mainGridView = findViewById(R.id.colorActivityMainGridView);
+        this.mainGridView = findViewById(R.id.colorsActivityMainGridView);
     }
 }
