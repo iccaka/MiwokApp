@@ -20,7 +20,7 @@
         <item>temmokka</item>
         <item>kenekaku</item>
         <item>kawinta</item>
-        <item>wo’e</item>
+        <item>wo\’e</item>
         <item>na’aacha</item>
     </string-array>
     <string-array name="familyArrayDefault">
@@ -72,24 +72,24 @@
         <item>What is your name?</item>
         <item>My name is…</item>
         <item>How are you feeling?</item>
-        <item>I'm feeling good.</item>
+        <item>I\'m feeling good.</item>
         <item>Are you coming?</item>
-        <item>Yes, I'm coming.</item>
-        <item>I'm coming.</item>
-        <item>Let's go</item>
+        <item>Yes, I\'m coming.</item>
+        <item>I\'m coming.</item>
+        <item>Let\'s go</item>
         <item>Come here.</item>
     </string-array>
     <string-array name="phrasesArrayTranslated">
         <item>minto wuksus</item>
-        <item>tinnә oyaase'nә</item>
+        <item>tinnә oyaase\'nә</item>
         <item>oyaaset…</item>
         <item>michәksәs?</item>
         <item>kuchi achit</item>
-        <item>әәnәs'aa?</item>
-        <item>hәә’ әәnәm</item>
+        <item>әәnәs\'aa?</item>
+        <item>hәә\’ әәnәm</item>
         <item>әәnәm</item>
         <item>yoowutis</item>
-        <item>әnni'nem</item>
+        <item>әnni\'nem</item>
     </string-array>
     <string name="app_name">Miwok</string>
     <string name="catPhrases">Phrases</string>

@@ -13,18 +13,24 @@ public class NumbersActivity extends BaseActivity {
 
         this.setViews();
 
-        this.dictionaryList = new ArrayList<>();
-        this.dictionaryList.add(new CustomDictionary("one", "lutti"));
-        this.dictionaryList.add(new CustomDictionary("two", "otiiko"));
-        this.dictionaryList.add(new CustomDictionary("three", "tolookosu"));
-        this.dictionaryList.add(new CustomDictionary("four", "oyyisa"));
-        this.dictionaryList.add(new CustomDictionary("five", "massokka"));
-        this.dictionaryList.add(new CustomDictionary("six", "temmokka"));
-        this.dictionaryList.add(new CustomDictionary("seven", "kenekaku"));
-        this.dictionaryList.add(new CustomDictionary("eight", "kawinta"));
-        this.dictionaryList.add(new CustomDictionary("nine", "wo'e"));
-        this.dictionaryList.add(new CustomDictionary("ten", "na'aacha"));
+//        this.dictionaryList = new ArrayList<>();
+//        this.dictionaryList.add(new CustomDictionary("one", "lutti"));
+//        this.dictionaryList.add(new CustomDictionary("two", "otiiko"));
+//        this.dictionaryList.add(new CustomDictionary("three", "tolookosu"));
+//        this.dictionaryList.add(new CustomDictionary("four", "oyyisa"));
+//        this.dictionaryList.add(new CustomDictionary("five", "massokka"));
+//        this.dictionaryList.add(new CustomDictionary("six", "temmokka"));
+//        this.dictionaryList.add(new CustomDictionary("seven", "kenekaku"));
+//        this.dictionaryList.add(new CustomDictionary("eight", "kawinta"));
+//        this.dictionaryList.add(new CustomDictionary("nine", "wo'e"));
+//        this.dictionaryList.add(new CustomDictionary("ten", "na'aacha"));
 
+        String[] numbersDefault = getResources().getStringArray(R.array.numbersArrayDefault);
+        String[] numbersTranslated = getResources().getStringArray(R.array.numbersArrayTranslated);
+
+        for (int i = 0; i <= numbersDefault.length - 1; i++) {
+            this.dictionaryList.add(new CustomDictionary(numbersDefault[i], numbersTranslated[i]));
+        }
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
         this.mainGridView.setAdapter(wordAdapter);
