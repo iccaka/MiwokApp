@@ -1,4 +1,96 @@
 <resources>
+    <string-array name="numbersArrayDefault">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>nine</item>
+        <item>ten</item>
+    </string-array>
+    <string-array name="numbersArrayTranslated">
+        <item>lutti</item>
+        <item>otiiko</item>
+        <item>tolookosu</item>
+        <item>oyyisa</item>
+        <item>massokka</item>
+        <item>temmokka</item>
+        <item>kenekaku</item>
+        <item>kawinta</item>
+        <item>wo’e</item>
+        <item>na’aacha</item>
+    </string-array>
+    <string-array name="familyArrayDefault">
+        <item>father</item>
+        <item>mother</item>
+        <item>son</item>
+        <item>daughter</item>
+        <item>older brother</item>
+        <item>younger brother</item>
+        <item>older sister</item>
+        <item>younger sister</item>
+        <item>grandmother</item>
+        <item>grandfather</item>
+    </string-array>
+    <string-array name="familyArrayTranslated">
+        <item>әpә</item>
+        <item>әṭa</item>
+        <item>angsi</item>
+        <item>tune</item>
+        <item>taachi</item>
+        <item>chalitti</item>
+        <item>teṭe</item>
+        <item>kolliti</item>
+        <item>ama</item>
+        <item>paapa</item>
+    </string-array>
+    <string-array name="colorsArrayDefault">
+        <item>red</item>
+        <item>green</item>
+        <item>brown</item>
+        <item>gray</item>
+        <item>black</item>
+        <item>white</item>
+        <item>dusty yellow</item>
+        <item>mustard yellow</item>
+    </string-array>
+    <string-array name="colorsArrayTranslated">
+        <item>weṭeṭṭi</item>
+        <item>chokokki</item>
+        <item>ṭakaakki</item>
+        <item>ṭopoppi</item>
+        <item>kululli</item>
+        <item>kelelli</item>
+        <item>ṭopiisә</item>
+        <item>chiwiiṭә</item>
+    </string-array>
+    <string-array name="phrasesArrayDefault">
+        <item>Where are you going?</item>
+        <item>What is your name?</item>
+        <item>My name is…</item>
+        <item>How are you feeling?</item>
+        <item>I'm feeling good.</item>
+        <item>Are you coming?</item>
+        <item>Yes, I'm coming.</item>
+        <item>I'm coming.</item>
+        <item>Let's go</item>
+        <item>Come here.</item>
+    </string-array>
+    <string-array name="phrasesArrayTranslated">
+        <item>minto wuksus</item>
+        <item>tinnә oyaase'nә</item>
+        <item>oyaaset…</item>
+        <item>michәksәs?</item>
+        <item>kuchi achit</item>
+        <item>әәnәs'aa?</item>
+        <item>hәә’ әәnәm</item>
+        <item>әәnәm</item>
+        <item>yoowutis</item>
+        <item>әnni'nem</item>
+    </string-array>
     <string name="app_name">Miwok</string>
     <string name="catPhrases">Phrases</string>
     <string name="catColors">Colors</string>
