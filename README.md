@@ -1,6 +1,6 @@
 # MiwokApp
 
-*A dictionary Android application that would be helpful to people that want to learn the Miwok language.*
+*A dictionary Android application written in Java, that would be helpful anyone that wants to learn the Miwok language.*
 
 ## Built With
 
