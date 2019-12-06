@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends BaseActivity {
 
+    public final int DEFAULT_STIRNG_ARRAY_DEFAULT = R.array.numbersArrayDefault;
+    public final int DEFUALT_STIRNG_ARRAY_TRANSLATED = R.array.numbersArrayTranslated;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -13,12 +16,9 @@ public class NumbersActivity extends BaseActivity {
         this.setViews();
         this.dictionaryList = new ArrayList<>();
 
-        String[] numbersDefault = getResources().getStringArray(R.array.numbersArrayDefault);
-        String[] numbersTranslated = getResources().getStringArray(R.array.numbersArrayTranslated);
-
-        for (int i = 0; i < numbersDefault.length; i++) {
-            this.dictionaryList.add(new CustomDictionary(numbersDefault[i], numbersTranslated[i]));
-        }
+        this.setStringArrayDefault(DEFAULT_STIRNG_ARRAY_DEFAULT);
+        this.setStringArrayTranslated(DEFUALT_STIRNG_ARRAY_TRANSLATED);
+        this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
         this.mainGridView.setAdapter(wordAdapter);
