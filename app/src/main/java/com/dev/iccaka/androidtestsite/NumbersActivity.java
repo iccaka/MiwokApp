@@ -1,6 +1,7 @@
 package com.dev.iccaka.androidtestsite;
 
 import android.os.Bundle;
+
 import java.util.ArrayList;
 
 public class NumbersActivity extends BaseActivity {
@@ -13,12 +14,9 @@ public class NumbersActivity extends BaseActivity {
         this.setViews();
         this.dictionaryList = new ArrayList<>();
 
-        String[] numbersDefault = getResources().getStringArray(R.array.numbersArrayDefault);
-        String[] numbersTranslated = getResources().getStringArray(R.array.numbersArrayTranslated);
-
-        for (int i = 0; i < numbersDefault.length; i++) {
-            this.dictionaryList.add(new CustomDictionary(numbersDefault[i], numbersTranslated[i]));
-        }
+        this.setStringArrayDefault(R.array.numbersArrayDefault);
+        this.setStringArrayTranslated(R.array.numbersArrayTranslated);
+        this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
         this.mainGridView.setAdapter(wordAdapter);

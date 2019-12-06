@@ -12,18 +12,11 @@ public class FamilyActivity extends BaseActivity {
         setContentView(R.layout.activity_family);
 
         this.setViews();
-
         this.dictionaryList = new ArrayList<>();
-        this.dictionaryList.add(new CustomDictionary("father", "әpә"));
-        this.dictionaryList.add(new CustomDictionary("mother", "әṭa"));
-        this.dictionaryList.add(new CustomDictionary("son", "angsi"));
-        this.dictionaryList.add(new CustomDictionary("daughter", "tune"));
-        this.dictionaryList.add(new CustomDictionary("older brother", "taachi"));
-        this.dictionaryList.add(new CustomDictionary("younger brother", "chalitti"));
-        this.dictionaryList.add(new CustomDictionary("older sister", "teṭe"));
-        this.dictionaryList.add(new CustomDictionary("younger sister", "kolliti"));
-        this.dictionaryList.add(new CustomDictionary("grandmother", "ama"));
-        this.dictionaryList.add(new CustomDictionary("grandfather", "paapa"));
+
+        this.setStringArrayDefault(R.array.familyArrayDefault);
+        this.setStringArrayTranslated(R.array.familyArrayTranslated);
+        this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
         this.mainGridView.setAdapter(wordAdapter);
