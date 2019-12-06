@@ -24,7 +24,7 @@ public abstract class BaseActivity extends AppCompatActivity implements SetViews
     }
 
     @Override
-    public void putWordsIntoList(){
+    public void putWordsIntoList() {
         String[] numbersDefault = getResources().getStringArray(this.stringArrayDefault);
         String[] numbersTranslated = getResources().getStringArray(this.stringArrayTranslated);
 
