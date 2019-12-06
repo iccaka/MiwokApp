@@ -19,11 +19,11 @@ public class ColorsActivity extends BaseActivity {
         this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
-        this.mainGridView.setAdapter(wordAdapter);
+        this.mainListView.setAdapter(wordAdapter);
     }
 
     @Override
     public void setViews() {
-        this.mainGridView = findViewById(R.id.colorsActivityMainGridView);
+        this.mainListView = findViewById(R.id.colorsActivityMainListView);
     }
 }

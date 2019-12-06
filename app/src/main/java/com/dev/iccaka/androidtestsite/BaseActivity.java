@@ -1,6 +1,6 @@
 package com.dev.iccaka.androidtestsite;
 
-import android.widget.GridView;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public abstract class BaseActivity extends AppCompatActivity implements SetViews, Activity {
 
-    protected GridView mainGridView;
+    protected ListView mainListView;
     protected List<Dictionary> dictionaryList;
     protected int stringArrayDefault;
     protected int stringArrayTranslated;

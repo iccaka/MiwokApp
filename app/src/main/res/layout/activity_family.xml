@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".FamilyActivity">
 
-    <GridView
-        android:id="@+id/familyActivityMainGridView"
-        android:numColumns="2"
+    <ListView
+        android:id="@+id/familyActivityMainListView"
         android:gravity="center"
         android:stretchMode="columnWidth"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </GridView>
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

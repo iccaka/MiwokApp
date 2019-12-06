@@ -19,11 +19,11 @@ public class PhrasesActivity extends BaseActivity {
         this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
-        this.mainGridView.setAdapter(wordAdapter);
+        this.mainListView.setAdapter(wordAdapter);
     }
 
     @Override
     public void setViews() {
-        this.mainGridView = findViewById(R.id.phrasesActivityMainGridView);
+        this.mainListView = findViewById(R.id.phrasesActivityMainListView);
     }
 }
