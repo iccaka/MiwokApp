@@ -5,9 +5,6 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends BaseActivity {
 
-    public final int DEFAULT_STIRNG_ARRAY_DEFAULT = R.array.numbersArrayDefault;
-    public final int DEFUALT_STIRNG_ARRAY_TRANSLATED = R.array.numbersArrayTranslated;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +13,8 @@ public class NumbersActivity extends BaseActivity {
         this.setViews();
         this.dictionaryList = new ArrayList<>();
 
-        this.setStringArrayDefault(DEFAULT_STIRNG_ARRAY_DEFAULT);
-        this.setStringArrayTranslated(DEFUALT_STIRNG_ARRAY_TRANSLATED);
+        this.setStringArrayDefault(R.array.numbersArrayDefault);
+        this.setStringArrayTranslated(R.array.numbersArrayTranslated);
         this.putWordsIntoList();
 
         WordAdapter wordAdapter = new WordAdapter(this, this.dictionaryList);
