@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
+
 public abstract class BaseActivity extends AppCompatActivity implements SetViews, Activity {
 
     protected ListView mainListView;
@@ -29,7 +30,7 @@ public abstract class BaseActivity extends AppCompatActivity implements SetViews
         String[] numbersTranslated = getResources().getStringArray(this.stringArrayTranslated);
 
         for (int i = 0; i < numbersDefault.length; i++) {
-            this.dictionaryList.add(new CustomDictionary(numbersDefault[i], numbersTranslated[i]));
+            this.dictionaryList.add(new CustomDictionary(numbersDefault[i], numbersTranslated[i], ""));
         }
     }
 }

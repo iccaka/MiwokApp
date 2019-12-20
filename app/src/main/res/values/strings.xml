@@ -96,4 +96,5 @@
     <string name="catColors">Colors</string>
     <string name="catNumbers">Numbers</string>
     <string name="catFamily">Family</string>
+    <string name="wordImageDesc">An image giving a visual representation of the given word</string>
 </resources>

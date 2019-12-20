@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -43,7 +44,8 @@ public class WordAdapter extends BaseAdapter {
 
             final TextView defaultWord = convertView.findViewById(R.id.defaultWord);
             final TextView translatedWord = convertView.findViewById(R.id.translatedWord);
-            final ViewHolder viewHolder = new ViewHolder(defaultWord, translatedWord);
+            final ImageView wordImage = convertView.findViewById(R.id.wordImage);
+            final ViewHolder viewHolder = new ViewHolder(defaultWord, translatedWord, wordImage);
 
             convertView.setTag(viewHolder);
         }
@@ -58,10 +60,12 @@ public class WordAdapter extends BaseAdapter {
     private class ViewHolder {
         private final TextView defaultWord;
         private final TextView translatedWord;
+        private final ImageView wordImage;
 
-        public ViewHolder(TextView defaultWord, TextView translatedWord) {
+        public ViewHolder(TextView defaultWord, TextView translatedWord, ImageView wordImage) {
             this.defaultWord = defaultWord;
             this.translatedWord = translatedWord;
+            this.wordImage = wordImage;
         }
 
         public TextView getDefaultWord() {
@@ -70,6 +74,10 @@ public class WordAdapter extends BaseAdapter {
 
         public TextView getTranslatedWord() {
             return this.translatedWord;
+        }
+
+        public ImageView getWordImage() {
+            return this.wordImage;
         }
     }
 }

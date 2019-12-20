@@ -4,8 +4,9 @@ public abstract class BaseDictionary implements Dictionary {
 
     protected String defaultWord;
     protected String translatedWord;
+    protected String wordImageString;
 
-    public BaseDictionary(String defaultWord, String translatedWord) {
+    public BaseDictionary(String defaultWord, String translatedWord, String wordImageString) {
         this.setDefaultWord(defaultWord);
         this.setTranslatedWord(translatedWord);
     }
@@ -15,7 +16,8 @@ public abstract class BaseDictionary implements Dictionary {
         return this.defaultWord;
     }
 
-    private void setDefaultWord(String defaultWord) {
+    @Override
+    public void setDefaultWord(String defaultWord) {
         this.defaultWord = defaultWord;
     }
 
@@ -24,7 +26,18 @@ public abstract class BaseDictionary implements Dictionary {
         return this.translatedWord;
     }
 
-    private void setTranslatedWord(String translatedWord) {
+    @Override
+    public void setTranslatedWord(String translatedWord) {
         this.translatedWord = translatedWord;
+    }
+
+    @Override
+    public String getWordImageString() {
+        return this.wordImageString;
+    }
+
+    @Override
+    public void setWordImageString(String wordImageString) {
+        this.wordImageString = wordImageString;
     }
 }
