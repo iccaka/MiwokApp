@@ -13,21 +13,21 @@ import java.util.List;
 public class WordAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Dictionary> dictionaryList;
+    private List<CustomActivityField> activityFieldList;
 
-    public WordAdapter(Context context, List<Dictionary> dictionaryList) {
+    public WordAdapter(Context context, List<CustomActivityField> activityFieldList) {
         this.context = context;
-        this.dictionaryList = dictionaryList;
+        this.activityFieldList = activityFieldList;
     }
 
     @Override
     public int getCount() {
-        return this.dictionaryList.size();
+        return this.activityFieldList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return this.dictionaryList.get(position);
+        return this.activityFieldList.get(position);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class WordAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        final Dictionary dictionary = this.dictionaryList.get(position);
+        final CustomActivityField activityField = this.activityFieldList.get(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(this.context).inflate(R.layout.words_list_view, null);
@@ -50,9 +50,12 @@ public class WordAdapter extends BaseAdapter {
             convertView.setTag(viewHolder);
         }
 
+        final Dictionary activityFieldDictionary = activityField.getDictionary();
+        final ImageView wordImage = activityField.getWordImage();
         final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
-        viewHolder.getDefaultWord().setText(dictionary.getDefaultWord());
-        viewHolder.getTranslatedWord().setText(dictionary.getTranslatedWord());
+        viewHolder.getDefaultWord().setText(activityFieldDictionary.getDefaultWord());
+        viewHolder.getTranslatedWord().setText(activityFieldDictionary.getTranslatedWord());
+        viewHolder.getWordImage().setImageResource(this.context.getResources().getIdentifier("numbers1.jpg", "drawable", this.context.getPackageName()));
 
         return convertView;
     }

@@ -9,6 +9,7 @@
         android:id="@+id/wordImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@id/translatedWord"
         android:contentDescription="@string/wordImageDesc">
     </ImageView>
 

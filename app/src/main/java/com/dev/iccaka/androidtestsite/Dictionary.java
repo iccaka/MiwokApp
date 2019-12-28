@@ -10,7 +10,4 @@ public interface Dictionary {
 
     void setTranslatedWord(String translatedWord);
 
-    String getWordImageString();
-
-    void setWordImageString(String WordImageString);
 }
