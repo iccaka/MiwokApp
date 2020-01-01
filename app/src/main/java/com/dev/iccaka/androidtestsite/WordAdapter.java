@@ -55,7 +55,8 @@ public class WordAdapter extends BaseAdapter {
         final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
         viewHolder.getDefaultWord().setText(activityFieldDictionary.getDefaultWord());
         viewHolder.getTranslatedWord().setText(activityFieldDictionary.getTranslatedWord());
-        viewHolder.getWordImage().setImageResource(this.context.getResources().getIdentifier("numbers1.jpg", "drawable", this.context.getPackageName()));
+        viewHolder.getWordImage().setImageDrawable(activityField.getWordImage().getDrawable());
+//        viewHolder.getWordImage().setImageResource(this.context.getResources().getIdentifier("numbers1", "drawable", this.context.getPackageName()));
 
         return convertView;
     }

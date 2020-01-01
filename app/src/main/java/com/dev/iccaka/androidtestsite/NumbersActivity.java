@@ -13,6 +13,7 @@ public class NumbersActivity extends BaseActivity {
 
         this.setViews();
         this.dictionaryList = new ArrayList<>();
+        this.wordImage = "numbers";
 
         this.setStringArrayDefault(R.array.numbersArrayDefault);
         this.setStringArrayTranslated(R.array.numbersArrayTranslated);

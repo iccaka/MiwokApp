@@ -1,6 +1,5 @@
 package com.dev.iccaka.androidtestsite;
 
-import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -31,13 +30,19 @@ public abstract class BaseActivity extends AppCompatActivity implements SetViews
     public void putWordsIntoList() {
         String[] numbersDefault = getResources().getStringArray(this.stringArrayDefault);
         String[] numbersTranslated = getResources().getStringArray(this.stringArrayTranslated);
-        Drawable wordImageDrawable = getResources().getDrawable(R.drawable.numbers1);
-        ImageView wordImage = new ImageView(this.getApplicationContext());
-        wordImage.setImageDrawable(wordImageDrawable);
+//        Drawable wordImageDrawable = getResources().getDrawable(R.drawable.numbers2);
+//        ImageView wordImage = new ImageView(this.getApplicationContext());
+//        wordImage.setImageDrawable(wordImageDrawable);
 
         for (int i = 0; i < numbersDefault.length; i++) {
+            ImageView imageView = new ImageView(this.getApplicationContext());
+            imageView.setImageResource(
+                    this.getApplicationContext().getResources().getIdentifier(
+                            (this.wordImage + i + 1), "drawable", this.getApplicationContext().getPackageName()
+                    )
+            );
             this.dictionaryList.add(
-                    new CustomActivityField(new CustomDictionary(numbersDefault[i], numbersTranslated[i]), wordImage)
+                    new CustomActivityField(new CustomDictionary(numbersDefault[i], numbersTranslated[i]), imageView)
             );
         }
     }
